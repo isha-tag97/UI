@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fashionista</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-info" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section text-center text-light bg-danger py-5">
+    <div class="container text-muted ">
+        <h1>Welcome to Fashionista</h1>
+        <p>Your one-stop destination for the latest trends in fashion.</p>
+        <a href="#collections" class="btn btn-primary btn-lg">Explore Now</a>
+    </div>
+</div>
+
+
+
+<!-- Main Content -->
+<section id="collections" class="py-5">
+    <div class="container ">
+        <h2 class="text-center mb-4">Amazing Features</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="card shadow border-0">
+                    <img src="five.jpg" alt="Product" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Experience Revolutionary Beauty</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Sturdy Case:</strong> Durable and elegant.</li>
+                            <li><strong>Luxury Packing:</strong> Premium quality packaging.</li>
+                            <li><strong>Overall Tan:</strong> Achieve a flawless tan in one swipe.</li>
+                            <li><strong>Intuitive Design:</strong> Easy to use and efficient.</li>
+                            <li><strong>Lightweight:</strong> Small and portable for on-the-go use.</li>
+                        </ul>
+                        <p>Available in 6 colors:</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <span class="color-swatch bg-dark"></span>
+                            <span class="color-swatch bg-secondary"></span>
+                            <span class="color-swatch bg-light"></span>
+                            <span class="color-swatch bg-danger"></span>
+                            <span class="color-swatch bg-warning"></span>
+                            <span class="color-swatch bg-pink"></span>
+                        </div>
+                        <a href="#" class="btn btn-danger mt-3">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+    <div class="container">
+        <p class="mb-0">&copy; 2024 Fashionista. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- --------------- -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = "translate(0)";
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    document.querySelectorAll(".hero-section, .product-card img, .card, h2, #contact p").forEach((el) => {
+        observer.observe(el);
+    });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

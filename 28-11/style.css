@@ -1,0 +1,11 @@
+.table-container {
+    max-height: 400px;
+    width: 634px;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+   
+ }
+

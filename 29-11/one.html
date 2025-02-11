@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollable Sidebar Page</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-t2xAJm4LEhEYlhjv8q02NQWT/uOGH/LC4j3Rtuq5UMq6iV8jWkHzu/Lo1z7m3Ijp"
+    crossorigin="anonymous"
+  >
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      background-color: #343a40;
+      padding-top: 20px;
+      overflow-y: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+      text-decoration: none;
+    }
+
+    /* Content styling */
+    .content {
+      margin-left: 260px;
+      padding: 20px;
+      max-height: 100vh;
+      overflow-y: auto;
+      background-color: #f8f9fa;
+    }
+
+    .content h1 {
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+
+    .content p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .content-section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#section1">Introduction</a>
+    <a href="#section2">Features</a>
+    <a href="#section3">Documentation</a>
+    <a href="#section4">Examples</a>
+    <a href="#section5">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div id="section1" class="content-section">
+      <h1>Introduction</h1>
+      <p>
+        Welcome to the introduction section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Integer vel venenatis ipsum. Proin efficitur, nisl nec tincidunt faucibus, justo nulla auctor
+        lorem, in faucibus ligula libero id lorem.
+      </p>
+    </div>
+    <div id="section2" class="content-section">
+      <h1>Features</h1>
+      <p>
+        Explore our features. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        scelerisque suscipit neque, id laoreet nunc efficitur sit amet.
+      </p>
+    </div>
+    <div id="section3" class="content-section">
+      <h1>Documentation</h1>
+      <p>
+        Check out the documentation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aliquam tincidunt fermentum purus at sagittis.
+      </p>
+    </div>
+    <div id="section4" class="content-section">
+      <h1>Examples</h1>
+      <p>
+        View examples here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        interdum nulla nec mauris varius, vel congue nisl fermentum.
+      </p>
+    </div>
+    <div id="section5" class="content-section">
+      <h1>Contact</h1>
+      <p>
+        Get in touch with us! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        tristique purus eget nunc volutpat, sed faucibus nisi interdum.
+      </p>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoQU3hE7bgURyZwrnQq6RDshz7uoIWbQU5azm6j9Bl3xm9x"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

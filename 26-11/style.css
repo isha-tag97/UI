@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.work-done .section-title {
+  font-weight: bold;
+  color: #000;
+}
+
+.work-done .info-item {
+  display: flex;
+  align-items: center;
+}
+
+.work-done .info-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.work-done .info-item h5 {
+  font-size: 1.2rem;
+}
+
+.work-done .info-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.bg-teal {
+  background-color: #20c997;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Updated img-fluid class */
+.img-fluid {
+  max-width: 100%; /* Ensures the image does not exceed its container */
+  height: auto; /* Maintains aspect ratio */
+  position: relative;
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeIn 1s ease-out forwards; /* Smooth fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    transform: translateX(-20px); /* Slide-in effect */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@media (min-width: 1140px)  {
+  .img-fluid {
+    max-height: 450px;
+  }
+}
+
+
+@media (min-width: 768px)  {
+  .img-fluid {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 576px)  {
+  .img-fluid {
+    max-height: 300px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .img-fluid {
+    max-height: 250px;
+  }
+}
+
